@@ -11,6 +11,7 @@
     "body-parser": "*",
     "request": "*",
     "redis": ">= 0.10.3",
+    "q": "^1.0.1"
   },
   "engines": {
     "node": "0.10.x"
@@ -24,6 +25,12 @@
     "heroku",
     "express"
   ],
+  "author": "Mark Pundsack",
+  "contributors": [
+    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
+  ],
   "license": "MIT",
-  "devDependencies"
+  "devDependencies": {
+    "q": "^1.0.1"
+  }
 }
