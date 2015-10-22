@@ -1,7 +1,7 @@
 {
   "name": "Slack Pokemon",
   "description": "A bot for having Pokemon battles in Slack.",
-  "repository": "https://github.com/rvinluan/slack-pokemon",
+  "repository": "https://github.com/nazcat/slack-pokemon-test",
   "keywords": ["node", "express", "static", "pokemon", "battle", "slack"],
   "addons": [ "redistogo" ]
 }
