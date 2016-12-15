@@ -75,7 +75,7 @@ module.exports.userChoosePokemon = function(commandsArray) {
         }
       return {
         text: textString,
-        spriteUrl: "http://sprites.pokecheck.org/i/"+stringy+".gif"
+        spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
       }
     });    
   });
@@ -118,7 +118,7 @@ module.exports.npcChoosePokemon = function(dex_no) {
         }
         return {
           text: textString,
-          spriteUrl: "http://sprites.pokecheck.org/i/"+stringy+".gif"
+          spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
         }
     });    
   });
