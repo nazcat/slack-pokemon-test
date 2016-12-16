@@ -71,10 +71,10 @@ module.exports.userChoosePokemon = function(commandsArray) {
       var myJSONStr = 'payload= {"spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif", "channel": "#general"}'
         return {
         text: textString,
-        "attachments": [{
-        "fallback": "The attachement isn't supported.",
-        "spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif"",
-        "mrkdwn_in": ["text","fields"],
+        attachments: [{
+        fallback: "The attachement isn't supported.",
+        spriteURL: "http://randompokemon.com/sprites/animated/"+stringy+".gif",
+        mrkdwn_in: ["text","fields"],
                 ]}
             }
         }
@@ -113,10 +113,10 @@ module.exports.npcChoosePokemon = function(dex_no) {
         var myJSONStr = 'payload= {"spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif", "channel": "#general"}'
         return {
           text: textString,
-          "attachments": [{
-          "fallback": "The attachement isn't supported.",
-          "spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif"",
-          "mrkdwn_in": ["text","fields"],
+          attachments: [{
+          fallback: "The attachement isn't supported.",
+          spriteURL: "http://randompokemon.com/sprites/animated/"+stringy+".gif",
+          mrkdwn_in: ["text","fields"],
                 ]}
             }
         }
