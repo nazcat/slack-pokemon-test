@@ -73,7 +73,7 @@ module.exports.userChoosePokemon = function(commandsArray) {
         spriteUrl:
             <html>
                 <head>
-                    <meta name="viewport" content="http://randompokemon.com/sprites/animated/{pkmn_id}.gif">
+                    <meta property="viewport" content="http://randompokemon.com/sprites/animated/{pkmn_id}.gif">
                     <title>pokemon.gif (100x100)</title>
                 </head>
                 <body style="margin: 0px;">     
@@ -118,7 +118,7 @@ module.exports.npcChoosePokemon = function(dex_no) {
             spriteUrl:
             <html>
                 <head>
-                    <meta name="viewport" content="http://randompokemon.com/sprites/animated/{pkmn_id}.gif">
+                    <meta property="viewport" content="http://randompokemon.com/sprites/animated/{pkmn_id}.gif">
                     <title>pokemon.gif (100×100)</title>
                 </head>
                 <body style="margin: 0px;">
