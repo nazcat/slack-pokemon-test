@@ -22,7 +22,7 @@ app.get('/', function(request, response) {
 * They come in this format:
 * {
 *   "text": "pkmn battle me",
-*   "user": "rvinluan",
+*   "user": "nazuremek",
 *   "channel": "#pkmn_battles" 
 * }
 * There's more stuff but that's all we care about.
@@ -110,8 +110,8 @@ app.listen(app.get('port'), function() {
 function buildResponse(text) {
   var json = {
     "text": text,
-    "username": "Pokemon Trainer",
-    "icon_emoji": ":pkmntrainer:"
+    "username": "Trump",
+    "icon_emoji": ":trainertrump:"
   }
   return JSON.stringify(json);
 }
