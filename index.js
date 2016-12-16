@@ -111,7 +111,7 @@ function buildResponse(text) {
   var json = {
     "text": text,
     "username": "Trump",
-    "icon_emoji": ":trainertrump:"
+    "icon_emoji": ":pkmntrainer:"
   }
   return JSON.stringify(json);
 }
