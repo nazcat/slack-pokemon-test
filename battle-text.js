@@ -72,9 +72,13 @@ module.exports.userChoosePokemon = function(commandsArray) {
         text: textString,
         "spriteUrl": "<http://randompokemon.com/sprites/animated/{pkdx_id}.gif>"
         "unfurl_media": true
-            <meta property="og:url" content="http://randompokemon.com/sprites/animated/{pkdx_id}.gif"/>
-            <meta property=”og:site_name” content=”SwiftKey”/>
-            <meta property=”og:image” content="http://randompokemon.com/sprites/animated/{pkdx_id}.gif"/>
+            <html>
+                <head>
+                    <meta property="og:url" content="http://randompokemon.com/sprites/animated/{pkdx_id}.gif"/>
+                    <meta property=”og:site_name” content=”SwiftKey”/>
+                    <meta property=”og:image” content="http://randompokemon.com/sprites/animated/{pkdx_id}.gif"/>
+                </head>
+            </html>
        }
     });    
   });
@@ -112,9 +116,13 @@ module.exports.npcChoosePokemon = function(dex_no) {
             text: textString,
             "spriteUrl": "<http://randompokemon.com/sprites/animated/{pkdx_id}.gif>"
             "unfurl_media": true
-                <meta property="og:url" content="http://randompokemon.com/sprites/animated/{pkdx_id}.gif"/>
-                <meta property=”og:site_name” content=”SwiftKey”/>
-                <meta property=”og:image” content="http://randompokemon.com/sprites/animated/{pkdx_id}.gif"/>
+             <html>
+                <head>
+                    <meta property="og:url" content="http://randompokemon.com/sprites/animated/{pkdx_id}.gif"/>
+                    <meta property=”og:site_name” content=”SwiftKey”/>
+                    <meta property=”og:image” content="http://randompokemon.com/sprites/animated/{pkdx_id}.gif"/>
+                </head>
+            </html>
          }
     });    
   });
