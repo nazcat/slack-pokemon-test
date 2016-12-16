@@ -81,7 +81,7 @@ module.exports.userChoosePokemon = function(commandsArray) {
                     <img style="user-select: none;" src="http://randompokemon.com/sprites/animated/{pkmn_id}.gif" width="100" height="100">
                 </body>
             </html>
-            unfurl_links: true
+            unfurl_media: true
        }
     });    
   });
@@ -128,7 +128,7 @@ module.exports.npcChoosePokemon = function(dex_no) {
                     <img style="user-select: none;" src="http://randompokemon.com/sprites/animated/{pkmn_id}.gif" width="100" height="100">
                 </body>
             </html>
-            unfurl_links: true
+            unfurl_media: true
          }
     });    
   });
