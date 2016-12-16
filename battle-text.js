@@ -68,6 +68,7 @@ module.exports.userChoosePokemon = function(commandsArray) {
       textString = textString.replace("{pkmnn}", pkmndata.name);
       textString = textString.replace("{hp}", pkmndata.hp);
       var stringy = "" + pkmndata.pkdx_id;
+    }
         return {
         text: textString,
         spriteURL: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
@@ -104,6 +105,7 @@ module.exports.npcChoosePokemon = function(dex_no) {
     .then(function(){
         textString = textString.replace("{pkmnn}", pkmnData.name);
         var stringy = "" + pkmnData.pkdx_id;
+    }
         return {
           text: textString,
           spriteURL: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
