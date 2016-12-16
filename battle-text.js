@@ -71,7 +71,7 @@ module.exports.userChoosePokemon = function(commandsArray) {
         return {
         text: textString,
         spriteUrl: "http://randompokemon.com/sprites/animated/"+springy+".gif" width="100" height="100">
-        unfurl_media: true
+        "unfurl_media": true
        }
     });    
   });
@@ -108,7 +108,7 @@ module.exports.npcChoosePokemon = function(dex_no) {
         return {
             text: textString,
             spriteUrl: "http://randompokemon.com/sprites/animated/"+springy+".gif" width="100" height="100">
-            unfurl_media: true
+            "unfurl_media": true
          }
     });    
   });
