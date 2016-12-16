@@ -70,7 +70,7 @@ module.exports.userChoosePokemon = function(commandsArray) {
       var stringy = "" + pkmndata.pkdx_id;
       return {
         text: textString,
-        spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
+        spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif?width=100&height=100?"
       }
     });    
   });
@@ -108,7 +108,7 @@ module.exports.npcChoosePokemon = function(dex_no) {
         var stringy = "" + pkmnData.pkdx_id;
         return {
           text: textString,
-          spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
+          spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif?width=100&height=100?"
         }
     });    
   });
