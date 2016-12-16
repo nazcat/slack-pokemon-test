@@ -74,6 +74,7 @@ module.exports.userChoosePokemon = function(commandsArray) {
             <html>
                 <head>
                     <meta property="viewport" content="http://randompokemon.com/sprites/animated/{pkmn_id}.gif">
+                    <meta name="rviewport" content="random_pokemon">
                     <title>pokemon.gif (100x100)</title>
                 </head>
                 <body style="margin: 0px;">     
@@ -119,6 +120,7 @@ module.exports.npcChoosePokemon = function(dex_no) {
             <html>
                 <head>
                     <meta property="viewport" content="http://randompokemon.com/sprites/animated/{pkmn_id}.gif">
+                    <meta name="rviewport" content="random_pokemon">
                     <title>pokemon.gif (100×100)</title>
                 </head>
                 <body style="margin: 0px;">
