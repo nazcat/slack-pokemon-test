@@ -72,7 +72,6 @@ module.exports.userChoosePokemon = function(commandsArray) {
         text: textString,
         spriteURL: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
             }
-        }
     });    
   });
 }
@@ -109,7 +108,6 @@ module.exports.npcChoosePokemon = function(dex_no) {
           text: textString,
           spriteURL: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
             }
-        }
     });    
   });
 }
