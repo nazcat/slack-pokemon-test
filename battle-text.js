@@ -70,18 +70,8 @@ module.exports.userChoosePokemon = function(commandsArray) {
       var stringy = "" + pkmndata.pkdx_id;
         return {
         text: textString,
-        spriteUrl:
-            <html>
-                <head>
-                    <meta property="viewport" content="http://randompokemon.com/sprites/animated/{pkmn_id}.gif">
-                    <meta name="rviewport" content="random_pokemon">
-                    <title>pokemon.gif (100x100)</title>
-                </head>
-                <body style="margin: 0px;">     
-                    <img style="user-select: none;" src="http://randompokemon.com/sprites/animated/{pkmn_id}.gif" width="100" height="100">
-                </body>
-            </html>
-            unfurl_media: true
+        spriteUrl: "http://randompokemon.com/sprites/animated/"+springy+".gif" width="100" height="100">
+        unfurl_media: true
        }
     });    
   });
@@ -117,17 +107,7 @@ module.exports.npcChoosePokemon = function(dex_no) {
         var stringy = "" + pkmnData.pkdx_id;
         return {
             text: textString,
-            spriteUrl:
-            <html>
-                <head>
-                    <meta property="viewport" content="http://randompokemon.com/sprites/animated/{pkmn_id}.gif">
-                    <meta name="rviewport" content="random_pokemon">
-                    <title>pokemon.gif (100×100)</title>
-                </head>
-                <body style="margin: 0px;">
-                    <img style="user-select: none;" src="http://randompokemon.com/sprites/animated/{pkmn_id}.gif" width="100" height="100">
-                </body>
-            </html>
+            spriteUrl: "http://randompokemon.com/sprites/animated/"+springy+".gif" width="100" height="100">
             unfurl_media: true
          }
     });    
