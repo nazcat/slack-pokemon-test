@@ -68,7 +68,8 @@ module.exports.userChoosePokemon = function(commandsArray) {
       textString = textString.replace("{pkmnn}", pkmndata.name);
       textString = textString.replace("{hp}", pkmndata.hp);
       var stringy = "" + pkmndata.pkdx_id;
-      return {
+      var myJSONStr = 'payload= {"spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif", "channel": "#general"}'
+        return {
         text: textString,
         "attachments": [{
         "fallback": "The attachement isn't supported.",
@@ -79,9 +80,7 @@ module.exports.userChoosePokemon = function(commandsArray) {
         }
     });    
   });
-
 }
-
 /*
 * Return a text string when the NPC chooses a Pokemon.
 * Fetch the pokemon from the API, choose 4 random moves, write them to REDIS,
@@ -111,19 +110,26 @@ module.exports.npcChoosePokemon = function(dex_no) {
     .then(function(){
         textString = textString.replace("{pkmnn}", pkmnData.name);
         var stringy = "" + pkmnData.pkdx_id;
+        var myJSONStr = 'payload= {"spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif", "channel": "#general"}'
         return {
           text: textString,
           "attachments": [{
-         "fallback": "The attachement isn't supported.",
-         "spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif"",
-         "mrkdwn_in": ["text","fields"],
+          "fallback": "The attachement isn't supported.",
+          "spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif"",
+          "mrkdwn_in": ["text","fields"],
                 ]}
             }
         }
     });    
   });
+function postMessageToSlack(){
+    var xmlhttp = new XMLHttpRequest(),
+        webhook_url = url-you-saved-from-before,
+        myJSONStr= json-string-from-above;
+    xmlhttp.open('POST', webhook_url, false);
+    xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xmlhttp.send(myJSONStr);
 }
-
 /*
 * Return a text string when the battle starts.
 * Stores the player's Slack username and what channel the battle is in,
