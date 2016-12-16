@@ -69,9 +69,11 @@ module.exports.userChoosePokemon = function(commandsArray) {
       textString = textString.replace("{hp}", pkmndata.hp);
       var stringy = "" + pkmndata.pkdx_id;
       return {
-        text: textString,{
-    attachments: {[
-          spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
+        text: textString,
+        "attachments": [{
+        "fallback": "The attachement isn't supported.",
+        "spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif"",
+        "mrkdwn_in": ["text","fields"],
                 ]}
             }
         }
@@ -110,9 +112,11 @@ module.exports.npcChoosePokemon = function(dex_no) {
         textString = textString.replace("{pkmnn}", pkmnData.name);
         var stringy = "" + pkmnData.pkdx_id;
         return {
-          text: textString,{
-    attachments: {[
-          spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
+          text: textString,
+          "attachments": [{
+         "fallback": "The attachement isn't supported.",
+         "spriteURL": "http://randompokemon.com/sprites/animated/"+stringy+".gif"",
+         "mrkdwn_in": ["text","fields"],
                 ]}
             }
         }
