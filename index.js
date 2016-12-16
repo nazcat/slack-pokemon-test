@@ -104,7 +104,7 @@ app.listen(app.get('port'), function() {
 
 /*
 * Helper function to build the JSON to send back to Slack.
-* Make sure to make a custom emoji in your Slack integration named :pkmntrainer:
+* Make sure to make a custom emoji in your Slack integration named :trainertrump:
 * with the included pkmntrainer jpeg, otherwise the profile picture won't work.
 */
 function buildResponse(text) {
