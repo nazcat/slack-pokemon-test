@@ -69,11 +69,9 @@ module.exports.userChoosePokemon = function(commandsArray) {
       textString = textString.replace("{hp}", pkmndata.hp);
       var stringy = "" + pkmndata.pkdx_id;
         return {
-        text: textString,{
-        Attachments.Add(new Attachment()
-            {
-        spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
-        });
+        text: textString,
+        <meta property="og:image"
+         spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif" />
        }
     });    
   });
@@ -108,11 +106,9 @@ module.exports.npcChoosePokemon = function(dex_no) {
         textString = textString.replace("{pkmnn}", pkmnData.name);
         var stringy = "" + pkmnData.pkdx_id;
         return {
-            text: textString,{
-            Attachments.Add(new Attachment()
-                {
-            spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
-            });
+            text: textString,
+            <meta property="og:image"
+            spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif" />
          }
     });    
   });
