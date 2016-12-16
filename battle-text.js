@@ -70,7 +70,7 @@ module.exports.userChoosePokemon = function(commandsArray) {
       var stringy = "" + pkmndata.pkdx_id;
         return {
         text: textString,{
-        replyMessage.Attachments.Add(new Attachment()
+        Attachments.Add(new Attachment()
             {
         spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
         });
@@ -109,7 +109,7 @@ module.exports.npcChoosePokemon = function(dex_no) {
         var stringy = "" + pkmnData.pkdx_id;
         return {
             text: textString,{
-            replyMessage.Attachments.Add(new Attachment()
+            Attachments.Add(new Attachment()
                 {
             spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
             });
