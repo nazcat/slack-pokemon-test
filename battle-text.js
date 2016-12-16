@@ -70,14 +70,14 @@ module.exports.userChoosePokemon = function(commandsArray) {
       var stringy = "" + pkmndata.pkdx_id;
         return {
         text: textString,
-        spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
+        spriteUrl:
             <html>
                 <head>
-                    <meta name="pkmnimage" content="width=device-width, minumum-scale=0.1">
+                    <meta name="viewport" content="width=device-width, minumum-scale=0.1">
                     <title>pokemon.gif (100x100)</title>
                 </head>
                 <body style="margin: 0px;">
-                    <img style="user-select: none; cursor: zoom-in;" src="http://randompokemon.com/sprites/animated/{pkmn_id}.gif" width="100" height="100">
+                    <img style="user-select: none;" src="http://randompokemon.com/sprites/animated/{pkmn_id}.gif" width="100" height="100">
                 </body>
             </html>
        }
@@ -115,14 +115,14 @@ module.exports.npcChoosePokemon = function(dex_no) {
         var stringy = "" + pkmnData.pkdx_id;
         return {
             text: textString,
-            spriteUrl: "http://randompokemon.com/sprites/animated/"+stringy+".gif"
+            spriteUrl:
             <html>
                 <head>
-                    <meta name="pkmnimage" content="width=device-width, minumum-scale=0.1">
+                    <meta name="viewport" content="width=device-width, minumum-scale=0.1">
                     <title>pokemon.gif (100×100)</title>
                 </head>
                 <body style="margin: 0px;">
-                    <img style="user-select: none; cursor: zoom-in;" src="http://randompokemon.com/sprites/animated/{pkmn_id}.gif" width="100" height="100">
+                    <img style="user-select: none;" src="http://randompokemon.com/sprites/animated/{pkmn_id}.gif" width="100" height="100">
                 </body>
             </html>
          }
