@@ -67,10 +67,10 @@ module.exports.userChoosePokemon = function(commandsArray) {
     .then(function(){
       textString = textString.replace("{pkmnn}", pkmndata.name);
       textString = textString.replace("{hp}", pkmndata.hp);
-      var stringy = "" + pkmndata.pkdx_id;
+      var stringy = "" + pkmndata.name;
       return {
         text: textString,
-        spriteUrl: "https://raw.githubusercontent.com/Naramsim/VeekunSpritesScraper/master/img/"+stringy+".gif"
+        spriteUrl: "http://www.pokestadium.com/sprites/xy/"+stringy+".gif"
       }
     });    
   });
@@ -105,10 +105,10 @@ module.exports.npcChoosePokemon = function(dex_no) {
     })
     .then(function(){
         textString = textString.replace("{pkmnn}", pkmnData.name);
-        var stringy = "" + pkmnData.pkdx_id;
+        var stringy = "" + pkmnData.name;
         return {
           text: textString,
-          spriteUrl: "https://raw.githubusercontent.com/Naramsim/VeekunSpritesScraper/master/img/"+stringy+".gif"
+          spriteUrl: "http://www.pokestadium.com/sprites/xy/"+stringy+".gif"
         }
     });    
   });
